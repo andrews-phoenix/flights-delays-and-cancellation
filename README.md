@@ -22,7 +22,7 @@ A list of technologies used within the project:
     * airports.csv: Original
     * flights.csv:  Original
  * [Wikipedia](https://es.wikipedia.org/wiki/Anexo:Abreviaciones_de_los_estados_de_Estados_Unidos)
-    * states.txt: Estraido manualmente
+    * states.txt: Extraido manualmente
  * Transformación propia
     * airports.json: conversión del archivo airports.csv como se explica más adelante
 
