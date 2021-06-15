@@ -31,7 +31,7 @@ import pandas as pd
 file = pd.read_csv('./data/airports.csv')
 file.to_json('./data/airpots.json')
 ```
-## Explorar y evaluar los datos (EDA)
+## Explorar y evaluar los datos:EDA
 Al importar se identifican y se corrigen los siguientes problemas al importar los datos:
 ### Tipo de dato en columnas y columnas innecesarias
 * Algunas columnas tenían el formato HHMM para la hora, pero al importar se cambia el dtype para str, para que no se pierdan datos
@@ -185,29 +185,53 @@ df_delay_reasons.plot(ax=axes[1], kind='bar',stacked=True, xlabel='Meses', legen
 axes[0].legend(categories_delay)
 ```
 
-## Modelo de datos
+## Definición del modelo de datos
 ***
 #### Modelo de datos
 Se una SQL por facilidad y garantiza la integralidad de los datos
 INSERTAR IMAGEN
 
-#### Arquitectura
+### Arquitectura
 Insertar arquitectura
 
-#### Herramientas
+### Herramientas y Tenologías
 
-A list of technologies used within the project:
-* [AWS S3](https://aws.amazon.com/es/s3/)
-* [AWS EC2](https://aws.amazon.com/es/ec2/)
-* [AWS RDS](https://aws.amazon.com/rds/)
-* [Apache Airflow](https://airflow.apache.org/)
-* [Python](https://example.com): Version 3.9
+#### [AWS S3](https://aws.amazon.com/es/s3/)
+Almacenamiento a bajo costo en la nube que ofrece escalabilidad, disponibilidad de datos, seguridad y rendimiento. Se usa para almacenar las fuentes de datos
 
-#### Frecuencia de actualización de datos
+#### [AWS EC2](https://aws.amazon.com/es/ec2/)
+Servicio de computación en la nube de capacidad informatica de forma segura. Entre sus ventajas es la capacidad de escalar y modificar las instancias con facilidad según sus necesidades. Se usa para hacer ejecutar la ETL.
+
+#### [AWS RDS](https://aws.amazon.com/rds/)
+Servicio web de base de datos relación de alta disponibilidad y de fácil configuración. Se usa para la base de datos en PostgreSQL
+
+#### [Apache Airflow](https://airflow.apache.org/)
+Es una erramienta de planificación y automatización de flujos de trabajo de gran conocimiento y respaldo en la industria de los datos y python. Implementación pendiente en EC2.
+
+#### [Python](https://example.com): Version 3.9
+Lenguaje de programación de fácil adopción, con muchas librerías para manipulación de datos.
+
+### Frecuencia de actualización de datos
 Teniendo en cuenta que es para analisis de identificar las razones de demora en todo el proceso del vuelo, además que los datos son del 2015, se sugiere lo siguiente:
-* Ingresar los datos hasta el año anterior.
-* En el año en curso, se sugiere actualizar una vez al mes los datos de los vuelos del mes inmediatamente anterior.
+* Ingresar los datos hasta el año anterior, para tener información más reciente y comparar los datos a lo largo de los años.
+* En el año en curso, se sugiere por lo menos actualizar una vez al mes los datos de los vuelos del mes inmediatamente anterior.
 
 ## Ejecutar ETL
 
-Adjuntar etl
+La ETL por facilidad se puede visualizar en el siguiente archivo jupyter con sus respectivos comentarios. De igual manera parte de esta información está en [Explorar y evaluar los datos EDA](#explorar-y-evaluar-los-datos:eda))
+INSERTAR ACA
+[ETL](https:link)
+
+### Modelo de datos
+
+La manipulación de los datos se puede consultar en el [Explorar y evaluar los datos EDA](#explorar-y-evaluar-los-datos:eda))
+
+La integridad de los datos se manejan respetando la llaves unicas previamente almacenadas en orden en las tablas respetivas.
+Así mismo las tablas que dependan de otra tabla, por seguridad se descarga los datos de la tabla dependiente, para luego hacer un merge con la nueva información a insertar
+
+Por ese motivo los datos ingresados a la DB solo pueden ser ingresados si respetan la integridad de los datos. Es fue una de las razones para decidir por un modelo SQL.
+Insertar imagen del model o olink del modelo
+
+### Diccionario de datos
+insertar diccionario de datos aca
+
