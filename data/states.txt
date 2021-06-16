@@ -1,0 +1,51 @@
+Alabama → (AL) → Alabama
+Alaska → (AK) → Alaska
+Arizona → (AZ) → Arizona
+Arkansas → (AR) → Arkansas
+California → (CA) → California
+Colorado → (CO) → Colorado
+Connecticut → (CT) → Connecticut
+Delaware → (DE) → Delaware
+Distrito de Columbia → (DC) → Distrito de Columbia
+Florida → (FL) → Florida
+Georgia → (GA) → Georgia (Estados Unidos)
+Hawaii → (HI) → Hawái
+Idaho → (ID) → Idaho
+Illinois → (IL) → Illinois
+Indiana → (IN) → Indiana
+Iowa → (IA) → Iowa
+Kansas → (KS) → Kansas
+Kentucky → (KY) → Kentucky
+Louisiana → (LA) → Luisiana
+Maine → (ME) → Maine
+Maryland → (MD) → Maryland
+Massachusetts → (MA) → Massachusetts
+Michigan → (MI) → Míchigan
+Minnesota → (MN) → Minnesota
+Mississippi → (MS) → Misisipi
+Missouri → (MO) → Misuri
+Montana → (MT) → Montana
+Nebraska → (NE) → Nebraska
+Nevada → (NV) → Nevada
+New Hampshire → (NH) → Nuevo Hampshire
+New Jersey → (NJ) → Nueva Jersey
+New Mexico → (NM) → Nuevo México
+New York → (NY) → Estado de Nueva York
+North Carolina → (NC) → Carolina del Norte
+North Dakota → (ND) → Dakota del Norte
+Ohio → (OH) → Ohio
+Oklahoma → (OK) → Oklahoma
+Oregon → (OR) → Oregón
+Pennsylvania → (PA) → Pensilvania
+Rhode Island → (RI) → Rhode Island
+South Carolina → (SC) → Carolina del Sur
+South Dakota → (SD) → Dakota del Sur
+Tennessee → (TN) → Tennessee
+Texas → (TX) → Texas
+Utah → (UT) → Utah
+Vermont →(VT) → Vermont
+Virginia → (VA) → Virginia
+Washington → (WA) → Estado de Washington
+West Virginia → (WV) → Virginia Occidental
+Wisconsin → (WI) → Wisconsin
+Wyoming → (WY) → Wyoming
